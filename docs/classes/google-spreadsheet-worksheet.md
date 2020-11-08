@@ -63,13 +63,14 @@ Property|Type|Description
 
 The row-based interface is provided as a simplified way to deal with sheets that are being used like a database (first row is column headers). In some situations it is much easier, but it comes with many limitations, so beware.
 
-#### `loadHeaderRow()` (async) :id=fn-loadHeaderRow
-> Loads the header row (first row) of the sheet
+#### `loadHeaderRow(row)` (async) :id=fn-loadHeaderRow
+> Loads the header row (first row by default) of the sheet
 _usually do not need to call this directly_
 - ✨ **Side effects** - `sheet.headerValues` is populated
 
-#### `setHeaderRow(headerValues)` (async) :id=fn-setHeaderRow
-> Set the header row (first row) of the sheet
+
+#### `setHeaderRow(headerValues, headerRow)` (async) :id=fn-setHeaderRow
+> Set the header row (first row by default) of the sheet
 
 Param|Type|Required|Description
 ---|---|---|---
